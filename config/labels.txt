@@ -1,3 +1,0 @@
-foo | N | N
-bar | N | N
-baz | N | N

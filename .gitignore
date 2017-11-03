@@ -1,0 +1,12 @@
+config/labels.txt
+*~
+*.pyc*
+hours/
+.idea/
+.sass-cache/
+local*
+*~
+sb_run_hours.sh
+config/crypto
+config/settings
+*.*~

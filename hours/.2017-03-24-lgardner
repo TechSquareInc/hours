@@ -1,5 +1,0 @@
-lgardner|2017-03-24 09:00|2017-03-24 09:15|0.25|TS|N|N|email/logs|False
-lgardner|2017-03-24 09:15|2017-03-24 10:00|0.75|C3DDB|Y|N|c3ddb node028 and node069|False
-lgardner|2017-03-24 10:00|2017-03-24 13:00|3.0|TS|N|N|working on omd flexible notifications, configured nagios plugins|False
-lgardner|2017-03-24 13:00|2017-03-24 17:00|4.0|TS|N|N|found out how to code check_mk/wato plugins with python, figured out easy way to install nodes/notifications/etc into check_mk/wato, should be all set on escalation too|False
-lgardner|2017-03-24 17:00|2017-03-24 17:15|0.25|TS|N|N|cleaning up/locking cabinets|False
