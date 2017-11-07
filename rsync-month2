@@ -1,0 +1,22 @@
+#!/bin/bash
+
+
+FIRSTDAY=$1
+ENDDATE=$2
+
+CUSER="$USER"
+
+echo $FIRSTDAY end is $ENDDATE ok
+read ANS
+COUNT=0
+while [ "$CDATE" != "$ENDDATE" ]; do
+    CDATE=$(date -d "$FIRSTDAY + $COUNT days" '+%Y-%m-%d')
+    CYEAR="2017"
+    REMOTEFILE="${CUSER}@aquinas.techsquare.com:/projects/hours/${CYEAR}/"${CDATE}-${CUSER}
+    LOCALFILE=$(pwd)/hours/${CDATE}-${CUSER}
+    if [ ! -f "${LOCALFILE}" ]; then
+	touch ${LOCALFILE}
+    fi
+    rsync -avzS $LOCALFILE $REMOTEFILE
+    COUNT=$(($COUNT + 1))
+done

@@ -150,7 +150,9 @@ indexCounter = len(DATA.records)
 			% end
 
 		</div> <!-- /.panel-group -->
-
+<center>
+<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=sb%40family.blomquist.org&amp;color=%2329527A&amp;src=intranet.techsquare.com_qdnag61aiob01e2nkfoe563ir4%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</center>
 	</div>
 	</div>
 	</div>
