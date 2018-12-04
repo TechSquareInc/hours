@@ -1,6 +1,10 @@
 <a name="updates"></a>
 ### UPDATES
-- **added back and forward arrows for navigating day to day**
+####12.4.18
+- Added Subtotal field for `[Week]`.
+- Commented out the logging feature in `/view/header.tpl` so it it not rendered.
+####Prior
+- added back and forward arrows for navigating day to day**
 - dependency: `markdown` python package
 - bugfix: adjacent-record overlap fixed (was adding instead of subtracting)
 - bugfix: start/end time popup suppressed for entries w/o a leading 0 (ex. 830, 8:30)

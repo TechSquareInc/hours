@@ -500,6 +500,28 @@ def getTotalForPayPeriod(name, date):
   
   return total
 
+def getTotalForPayWeek(name, date):
+  date = validateDate(date)
+  total = 0.0
+
+  '''
+  For use if you want to go off of the "techsquare" week (Saturday through friday).
+  tsWeek = ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+  tsWeekDay = tsWeek.index(tsWeek[date.weekday() - 5])
+  weekStart = date - dt.timedelta(days=tsWeekDay)
+  weekEnd = date + dt.timedelta(days=6 - tsWeekDay)
+  '''
+
+  weekStart = date - dt.timedelta(days=date.weekday())
+  weekDates = []
+
+  for day in range(7):
+    weekDates.append(weekStart + dt.timedelta(day))
+
+  for dates in weekDates:
+    total += getSubtotalForDay(name, dates)
+
+  return total
 
 def getPayPeriodMonth(date):
   """ PUBLIC
@@ -521,6 +543,7 @@ def getPayPeriodMonth(date):
   
   # get the str name for the month
   return date.strftime("%b")
+
 
 
 def countSubtotal(records):
