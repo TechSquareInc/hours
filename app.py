@@ -286,6 +286,7 @@ def hours():
   # parses through the saved records and counts the hours worked for the day / pay period
   TEMPLATE.subtotal = recorder.getSubtotalForDay(TEMPLATE.name, TEMPLATE.date)
   TEMPLATE.total = recorder.getTotalForPayPeriod(TEMPLATE.name, TEMPLATE.date)
+  TEMPLATE.weektotal = recorder.getTotalForPayWeek(TEMPLATE.name, TEMPLATE.date)
 
   #######################################################
   

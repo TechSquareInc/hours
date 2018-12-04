@@ -90,7 +90,7 @@
 ----
 
 <a name="remote-host-logging"></a>
-#### Remote Host Logging :
+#### Remote Host Logging [Deprecated as of 12.4.18]:
 - secondary method of storing hours
 - not necessary in order to use the app
 - requires : `sshuttle` to be connecting to the remote host

@@ -28,7 +28,7 @@ import modu.recorder as recorder
 							% if DATA.pendingRecordsExist:
 								<span class="pending-text">* </span>
 							% end
-								Subtotal [Today]: <strong>{{DATA.subtotal}}</strong> [{{DATA.month}}]: <strong>{{DATA.total}}</strong>
+								Subtotal [Today]: <strong>{{DATA.subtotal}}</strong> [Week]: <strong>{{DATA.weektotal}}</strong> [{{DATA.month}}]: <strong>{{DATA.total}}</strong>
 						</h3>
 					</div>
 				</div>
@@ -49,11 +49,15 @@ import modu.recorder as recorder
 				</div>
 				</div>
 
+
+                <!-- This is the Send Logs feature, [Deprecated as of 12.4.18]
 				<div class="row" name="row2">
 				<div class="col-md-12">
-					% include("header_send_records.tpl")
+					%# include("header_send_records.tpl")
 				</div>
 				</div>
+                -->
+
 
 				</div>
 			</div>
